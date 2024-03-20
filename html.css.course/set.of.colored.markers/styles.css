@@ -1,0 +1,83 @@
+/* CSS for Heading. */
+h1 {
+    height: 40px;
+    width:400px;
+    border: 2px solid black; 
+    margin: 20px auto;
+    text-align: center;
+}
+
+.rainbow {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* CSS for container class. Holds all the marker code. */
+.container{
+    height: 335px;
+    width: 300px;
+    border: groove;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin: auto;
+}
+
+/* Marker, cap and sleeve class. */
+.marker{
+    width: 200px;
+    height: 25px;
+    margin: 20px auto;
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.sleeve{
+    width: 110px;
+    height: 25px;
+    background-color: #FFFFFF99;
+    border-left: 10px double rgba(0, 0, 0, 0.8);
+}
+
+.cap, .sleeve{
+    display: inline-block;
+}
+
+/* Individual colored marker class. */
+.red{
+    background:linear-gradient(rgba(163, 23, 5, 0.925),rgba(253, 63, 75, 0.92),rgb(153, 9, 9));
+    box-shadow: 0 0 20px 0 rgba(253, 63, 75, .5);
+}
+
+.orange{
+    background:linear-gradient(#b66706,#ff9c23,#a85e0ad5);
+    box-shadow: 0 0 20px 0 #ff9c238c;
+} 
+
+.yellow{
+    background:linear-gradient(hsla(61, 92%, 39%, 0.89),hsl(60, 91%, 64%),hsl(60, 91%, 31%));
+    box-shadow: 0 0 20px 0 hsl(60, 100%, 25%);
+} 
+
+.green{
+    background:linear-gradient(rgb(18, 168, 18),rgb(71, 216, 71),rgb(5, 148, 5));
+    box-shadow: 0 0 20px 0 rgba(7, 214, 59, 0.39)
+} 
+
+.blue{
+    background:linear-gradient(hsl(240, 76%, 40%),hsl(240, 91%, 58%),hsl(240, 91%, 35%));
+    box-shadow: 0 0 20px 0 hsla(240, 65%, 51%, 0.705);
+} 
+
+.indigo{
+    background:linear-gradient(#841ab4,#aa46d8,#7707aa);
+    box-shadow: 0 0 20px 0 #7607aaa6
+} 
+
+.violet{
+    background:linear-gradient(rgb(180, 11, 180),rgb(255, 67, 255),rgb(165, 7, 165));
+    box-shadow: 0 0 20px 0 rgba(255, 67, 255,.5);
+} 
