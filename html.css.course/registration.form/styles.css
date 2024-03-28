@@ -29,3 +29,22 @@ h1, p{
     text-decoration: underline;
     font-style: italic;
 }
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
