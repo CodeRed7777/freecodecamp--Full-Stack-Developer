@@ -4,7 +4,7 @@ body{
     height: 100vh;
     background-color: rgba(26, 0, 51, 0.945);
     color: rgba(253, 250, 246, 0.932);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
 
@@ -15,7 +15,7 @@ h1{
 }
 
 h1, p{
-    margin: 10px auto;
+    margin: 1em auto;
     text-align: center;
 }
 
@@ -31,20 +31,49 @@ h1, p{
 }
 
 form {
-    width: 60vw;
+    width: 70vw;
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
 
 fieldset {
     border: none;
+    border-bottom: 3px solid rgb(70, 67, 67);
     padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
+
+}
+
+legend {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
 }
 
 label {
     display: block;
     margin: 0.5rem 0;
+}
+
+/* CSS for terms and conditions link. */
+a{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+a:link{
+    color: blanchedalmond;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color:blanchedalmond;
+}
+
+a:active{
+    color: aqua;
 }
