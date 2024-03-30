@@ -12,16 +12,55 @@
         First 3 lessons are free! <span class="sign-up">Please fill out the form below to sign up!</span>
     </p><hr>
     <form method="post" action='https://register-demo.freecodecamp.org'>
+<!-- First fieldset to create account for lessons. -->
     <fieldset>
-        <label for="first-name">First Name: <input id="first-name" type="text" required></label>
-        <label for="last-name">Last Name: <input id="last-name" type="text" required></label>
-        <label for="email">Email: <input id="email" type="text" required></label>
-        <label for="new-password">New Password: <input id="new-password" type="password" required pattern="[a-z0-5]{8,}"></label>
+        <legend>Customer Account</legend>
+        <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required></label>
+        <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required></label>
+        <label for="email">Email: <input id="email" name="email" type="text" required></label>
+        <label for="new-password">New Password: <input id="new-password" name="new-password" type="password" required pattern="[a-z0-5]{8,}"></label>
+    <!-- To validate password, JS is needed. Also will require additrional css and html to style and operate front end styling. -->
+        <label for="confirm-password">Confirm Password: <input id="confirm-password" name="confirm-password" type="password" requiredpattern="[a-z0-5]{8,}"></label>
     </fieldset>
-    <fieldset></fieldset>
-    <fieldset></fieldset>
-    <fieldset></fieldset>
-    <fieldset></fieldset>
+<!-- Second fieldset is to have customer select what lesson(s) they're interested in taking. -->
+    <fieldset>
+        <legend>Select the type of lesson(s) your interested in!</legend>
+        <label for="music-theory"><input id="music-theory" name="music-theory" type="checkbox" required> Music Theory</label>
+        <img src="" alt="Picture of sheet music theory." name="inst-pic">
+        <label for="guitar"><input id="guitar" name="guitar" type="checkbox" required> Guitar</label>
+        <img src="" alt="Picture of a guitar." name="inst-pic">
+        <label for="trumpet"><input id="trumpet" name="trumpet" type="checkbox" required> Trumpet</label>
+        <img src="" alt="Picture of a trumpet." name="inst-pic">
+    </fieldset>
+<!-- Third fieldset is for customer account information. -->
+    <fieldset>
+        <legend>Account Info.</legend>
+        <label for="prof-pic">Upload a profile picture: <input id="prof-pic" name="prof-pic" type="file"></label>
+        <label for="age">Age (years): <input id="age" name="age" type="number" min="13" max="120" /></label>
+        <label for="main-inst">Main Instrument: </label>
+            <select id="main-inst" name="main-inst">
+                <option value="">(select one)</option>
+                <option value="1">Guitar</option>
+                <option value="2">Trumpet</option>
+                <option value="3">Piano</option>
+                <option value="4">Other</option>
+            </select>
+        <label for="bio-text">Bio: </label>
+        <textarea id="bio-text" name="bio-text" placeholder="Tell us about yourself...                        What are your music interests and goals?!" 
+        cols="40" rows="5"></textarea>
+        <label for="fav-genre">Favorite genres: </label>
+            <select id="fav-genre" name="fave-genre">
+                <option value="">(select one)</option>
+                <option value="1">Rock & Roll</option>
+                <option value="2">Electronic</option>
+                <option value="3">Jazz</option>
+                <option value="4">Blues</option>
+                <option value="5">Classical</option>
+            </select>
+    </fieldset>
+<!-- This label is for the terms and conditions. It is not linked to any reference. -->
+    <label for="t-c"><input id="t-c" name="t-c" type="checkbox" required />I accept the <a href="">terms and conditions</a>.</label>
+    <input type="submit" name="submit" value="Submit" />
     </form>
 </body>
 </html>
