@@ -56,6 +56,32 @@ label {
     margin: 0.5rem 0;
 }
 
+label:last-of-type{
+    padding-top: 1em;
+}
+
+input:last-of-type{
+    margin-top: 0.5em;
+}
+
+input, textarea{
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    min-height: 2em;
+}
+
+input, textarea, select{
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
 /* CSS for terms and conditions link. */
 a{
     font-style: italic;
