@@ -13,7 +13,7 @@
     </p><hr>
     <form method="post" action='https://register-demo.freecodecamp.org'>
 <!-- First fieldset to create account for lessons. -->
-    <fieldset class="cust-account">
+    <fieldset>
         <legend>Customer Account</legend>
         <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required></label>
         <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required></label>
@@ -23,10 +23,9 @@
         <label for="confirm-password">Confirm Password: <input id="confirm-password" name="confirm-password" type="password" requiredpattern="[a-z0-5]{8,}"></label>
     </fieldset>
 <!-- Second fieldset is to have customer select what lesson(s) they're interested in taking. -->
-    <fieldset class="inline-labels">
+    <fieldset>
         <legend>Select the type of lesson(s) your interested in!</legend>
-        <label for="music-theory"><input id="music-theory" class="inline" name="picture" type="checkbox" required> Music
-            Theory</label>
+        <label for="music-theory"><input id="music-theory" class="inline" name="picture" type="checkbox" required> Music Theory</label>
         <label for="guitar"><input id="guitar" class="inline" name="picture" type="checkbox" required> Guitar</label>
         <label for="trumpet"><input id="trumpet" class="inline" name="picture" type="checkbox" required> Trumpet</label>
     </fieldset>
@@ -44,7 +43,7 @@
                 <option value="4">Other</option>
             </select>
         <label for="bio-text">Bio: </label>
-        <textarea id="bio-text" name="bio-text" placeholder="Tell us about yourself... What are your music interests and goals?!" 
+        <textarea id="bio-text" name="bio-text" placeholder="Tell us about yourself...                        What are your music interests and goals?!" 
         cols="40" rows="5"></textarea>
         <label for="fav-genre">Favorite genres: </label>
             <select id="fav-genre" name="fave-genre">
@@ -56,9 +55,9 @@
                 <option value="5">Classical</option>
             </select>
     </fieldset>
-<!-- This label is for the terms and conditions and submit input. It is not linked to any reference. -->
-    <label for="t-c"><input id="t-c" name="t-c" type="checkbox" required />I accept the <a href="">terms and conditions</a>.</label>
-    <input type="submit" name="submit" value="Submit" />
+<!-- This label is for the terms and conditions. It is not linked to any reference. -->
+    <label class="inline-tc" for="t-c"><input id="t-c" name="t-c" type="checkbox" required />I accept the <a href="">terms and conditions</a>.</label>
+    <input  type="submit" name="submit" value="Submit" />
     </form>
 </body>
 </html>
