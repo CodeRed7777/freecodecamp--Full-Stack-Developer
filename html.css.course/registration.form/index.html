@@ -27,7 +27,7 @@
         <legend>Select the type of lesson(s) your interested in!</legend>
         <label for="music-theory"><input id="music-theory" class="inline" name="picture" type="checkbox" required> Music
             Theory</label>
-        <label for="guitar"><input id="guitar" class="inline" name="picture" type="checkbox" required> Guitar</label>
+        <label class="guitar-position" for="guitar"><input id="guitar" class="inline" name="picture" type="checkbox" required> Guitar</label>
         <label for="trumpet"><input id="trumpet" class="inline" name="picture" type="checkbox" required> Trumpet</label>
     </fieldset>
 <!-- Third fieldset is for customer account information. -->
@@ -57,7 +57,9 @@
             </select>
     </fieldset>
 <!-- This label is for the terms and conditions and submit input. It is not linked to any reference. -->
-    <label for="t-c"><input id="t-c" name="t-c" type="checkbox" required />I accept the <a href="">terms and conditions</a>.</label>
+    <label class="inline-tc" for="t-c">I accept the <a href="">terms and conditions</a>.
+        <input id="t-c" name="t-c" type="checkbox" required />
+    </label>
     <input type="submit" name="submit" value="Submit" />
     </form>
     <footer>
@@ -69,7 +71,7 @@
             x: <a href="https://twitter.com/Red7777Code">@Red7777Code</a><br>
             discord: code.red777 #7529<br>
         </address>
-        <br>No Copyright - <a href="https://www.freecodecamp.org""> freecodecamp.org!</a>
+        <br>No Copyright - <a href="https://www.freecodecamp.org"> freecodecamp.org!</a>
     </footer>
 </body>
 </html>

@@ -61,7 +61,7 @@ fieldset.inline-labels {
 fieldset.inline-labels label {
     display: flex;
     align-items: center;
-    margin: 0.5em;
+    margin: 0.5em 0 0.5em 0.5em;
     padding: 1.5em;
 }
 
@@ -69,13 +69,18 @@ fieldset.inline-labels label {
 
 legend {
     width: 100%;
-    padding-top: 1.5em;
+    padding: .5em;
     text-align: center;
+    font-size: large;
 }
 
 label {
     display: block;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
+}
+
+.guitar-position{
+    margin-right: 5px;
 }
 
 input, textarea{
@@ -112,35 +117,25 @@ input[type="file"] {
 }
 
 /* Adjust the label for the terms and conditions */
-label[for="t-c"] {
-    display: flex;
+.inline-tc {
+    display: inline-flex;
     align-items: center;
-    /* Align items vertically */
-    margin: 1em 0;
-    /* Adjust margin as needed */
-    padding: 0;
-    /* Remove padding */
+    white-space: nowrap;
+    margin: 20px;
+    /* Added white-space: nowrap; to prevent text wrapping */
 }
 
-/* this needs to be fixed!! */
-/* #t-c {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-} */
-
-/* Adjust the styling for the terms and conditions link */
-label[for="t-c"] a {
-    margin-left: 5px;
-    /* Add some space between the checkbox and the link */
-    font-style: italic;
-    text-decoration: underline;
-    color: blanchedalmond;
+.inline-tc input[type="checkbox"] {
+    order: -1;
+    margin: 0 10px 0 0;
+    padding: 5px;
 }
+
 /* CSS for terms and conditions link. */
 a{
     font-style: italic;
     text-decoration: underline;
+    padding-left: 5px;
 }
 
 a:link{
