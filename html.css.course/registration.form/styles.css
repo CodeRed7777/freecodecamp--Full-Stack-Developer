@@ -79,10 +79,6 @@ label {
     margin: 1rem 0;
 }
 
-.guitar-position{
-    margin-right: 5px;
-}
-
 input, textarea{
     background-color: #0a0a23;
     border: 1px solid #0a0a23;
