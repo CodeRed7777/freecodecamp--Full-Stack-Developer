@@ -81,3 +81,8 @@ h1 {
     background:linear-gradient(rgb(180, 11, 180),rgb(255, 67, 255),rgb(165, 7, 165));
     box-shadow: 0 0 20px 0 rgba(255, 67, 255,.5);
 } 
+
+footer {
+    font-size: 14px;
+    margin: 25px;
+}
