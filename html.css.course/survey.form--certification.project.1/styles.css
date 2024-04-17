@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-image: url("../img/tourism.background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
