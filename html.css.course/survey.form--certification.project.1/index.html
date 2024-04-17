@@ -18,70 +18,72 @@
     <form action="" id="survey-form">
 <!-- First section of form. -->
         <fieldset>
-            <legend></legend>
-            <label for="name" id="name-label">Name <input type="text" id="name" placeholder="full name"></label>
-            <label for="email" id="email-label">Email <input type="email" id="email" name="email" placeholder="email address"></label>
-            <label for="number" id="number-label">Age (required) <input type="number" id="number" min="18" max="120" placeholder="age"></label>
+            <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Full Name"></label>
+            <label for="email" id="email-label">Email <input type="email" id="email" name="email" placeholder="Email Address"></label>
+            <label for="number" id="number-label">Age (required) <input type="number" id="number" min="18" max="120" placeholder="Age"></label>
 
-            <label for=""></label>
-            <select name="" id="">
+            <label for="dropdown">What continent are you most interested in visiting?</label>
+            <select name="continent" id="dropdown">
                 <option value="">(select one)</option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-                <option value="5"></option>
+                <option value="1">Africa</option>
+                <option value="2">Antartica</option>
+                <option value="3">Asia</option>
+                <option value="4">Europe</option>
+                <option value="5">North America</option>
+                <option value="6">South America</option>
             </select>
         </fieldset>
 
 <!-- Second part of form. -->
         <fieldset>
-            <legend></legend>
-            <label for=""><input type="radio"></label>
-            <label for=""><input type="radio"></label>
-            <label for=""><input type="radio"></label>
+            <legend>Type of travel? (select one)</legend>
+            <label for=""><input type="radio" name="travel-type">Business</label>
+            <label for=""><input type="radio" name="travel-type">Leisure</label>
+            <label for=""><input type="radio" name="travel-type">Lifestyle</label>
         </fieldset>
 
 <!-- Third part of form. -->
         <fieldset>
-            <legend></legend>
-            <label for=""></label>
-                <select name="" id="">
-                    <option value=""></option>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                    <option value="4"></option>
-                    <option value="5"></option>
+            <legend>What type of traveling style are you most interested in?</legend>
+            <label for="travel-style"></label>
+                <select name="travel-style" id="travel-style">
+                    <option value="">(select one)</option>
+                    <option value="1">Adventurous</option>
+                    <option value="2">Domestic</option>
+                    <option value="3">International</option>
+                    <option value="4">Luxary</option>
+                    <option value="5">Tours</option>
                 </select>
         </fieldset>
 
 <!-- Fourth part of form. -->
         <fieldset>
-            <legend></legend>
-            <label for=""><input type="checkbox"></label>
-            <label for=""><input type="checkbox"></label>
-            <label for=""><input type="checkbox"></label>
-            <label for=""><input type="checkbox"></label>
-            <label for=""><input type="checkbox"></label>
-            <label for=""><input type="checkbox"></label>
-            <label for=""><input type="checkbox"></label>
-            <label for=""><input type="checkbox"></label>
-            <label for=""><input type="checkbox"></label>
-            <label for=""><input type="checkbox"></label>
-            <label for=""><input type="checkbox"></label>
+            <legend>What type of vacation(s) are you looking to take?</legend>
+            <label for="a-f-vaca"><input type="checkbox" value="vacation-type" id="a-f-vaca">Activity-Focused Vacation</label>
+            <label for="budget-vaca"><input type="checkbox" value="vacation-type" id="budget-vaca">Budget Vacation</label>
+            <label for="camping-vaca"><input type="checkbox" value="vacation-type" id="camping-vaca">Camping Vacation</label>
+            <label for="city-vaca"><input type="checkbox" value="vacation-type" id="city-vaca">City Trip</label>
+            <label for="cruise-vaca"><input type="checkbox" value="vacation-type" id="cruise-vaca">Cruise</label>
+            <label for="cult-vaca"><input type="checkbox" value="vacation-type" id="cult-vaca">Cultural Vacation</label>
+            <label for="fam-vaca"><input type="checkbox" value="vacation-type" id="fam-vaca">Family Vacation</label>
+            <label for="group-vaca"><input type="checkbox" value="vacation-type" id="group-vaca">Group Vacation</label>
+            <label for="resort-vaca"><input type="checkbox" value="vacation-type" id="resort-vaca">Resort</label>
+            <label for="solo-vaca"><input type="checkbox" value="vacation-type" id="solo-vaca">Solo Vacation</label>
+            <label for="staycation-vaca"><input type="checkbox" value="vacation-type" id="staycation-vaca">Staycation</label>
         </fieldset>
 
 <!-- Fifth part of form. -->
         <fieldset>
-            <legend></legend>
-            <label for=""><input type="textarea" name="" id=""></label>
+            <legend>Any comments, questions or suggestions?</legend>
+            <label for="com-quest-sugg-text">
+                <input type="textarea" name="com-quest-sugg" id="comment-quest-sugg-text" cols="40" rows="5">
+            </label>
         </fieldset>
 <!-- This label is for the terms and conditions and submit input. It is not linked to any reference. -->
-<label class="inline-tc" for="t-c">I accept the <a href="">terms and conditions</a>.
-    <input id="t-c" name="t-c" type="checkbox" required />
-</label>
-<input type="submit" name="submit" value="Submit" />
+        <label class="inline-tc" for="t-c">I accept the <a href="">terms and conditions</a>.
+            <input id="t-c" name="t-c" type="checkbox" required />
+        </label>
+        <input type="submit" name="submit" value="Submit"/>
     </form>
 
 <!-- Personal footer. -->
