@@ -7,19 +7,19 @@
     <title>Travel Survey Form -- Certification Project 1</title>
 </head>
 <body>
-
-    <h1 id="title">Travel Survey Form</h1>
-    <p id="description">Thank you for choosing our travel agency! 
-        Fill out the form below to help us find your dream detination!
-        For any question please call (***-***-****).
-    </p>
-
+    <div class="header">
+        <h1 id="title">Travel Survey Form</h1>
+        <p id="description">Thank you for choosing our travel agency!
+            Fill out the form below to <br> help us find your dream destination!
+            For any question please call (***-***-****).
+        </p>
+    </div>
 <!-- This is the start of the form. Action attribute is empty for now. -->
     <form action="" id="survey-form">
 <!-- First section of form. -->
         <fieldset>
-            <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Full Name"></label>
-            <label for="email" id="email-label">Email <input type="email" id="email" name="email" placeholder="Email Address"></label>
+            <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Full Name" required></label>
+            <label for="email" id="email-label">Email <input type="email" id="email" name="email" placeholder="Email Address" required></label>
             <label for="number" id="number-label">Age (required) <input type="number" id="number" min="18" max="120" placeholder="Age"></label>
 
             <label for="dropdown">What continent are you most interested in visiting?</label>
@@ -37,9 +37,9 @@
 <!-- Second part of form. -->
         <fieldset>
             <legend>Type of travel? (select one)</legend>
-            <label for=""><input type="radio" name="travel-type">Business</label>
-            <label for=""><input type="radio" name="travel-type">Leisure</label>
-            <label for=""><input type="radio" name="travel-type">Lifestyle</label>
+            <label for=""><input type="radio" name="travel-type" value="business">Business</label>
+            <label for=""><input type="radio" name="travel-type" value="leisure">Leisure</label>
+            <label for=""><input type="radio" name="travel-type" value="lifestyle">Lifestyle</label>
         </fieldset>
 
 <!-- Third part of form. -->
@@ -59,31 +59,31 @@
 <!-- Fourth part of form. -->
         <fieldset>
             <legend>What type of vacation(s) are you looking to take?</legend>
-            <label for="a-f-vaca"><input type="checkbox" value="vacation-type" id="a-f-vaca">Activity-Focused Vacation</label>
-            <label for="budget-vaca"><input type="checkbox" value="vacation-type" id="budget-vaca">Budget Vacation</label>
-            <label for="camping-vaca"><input type="checkbox" value="vacation-type" id="camping-vaca">Camping Vacation</label>
-            <label for="city-vaca"><input type="checkbox" value="vacation-type" id="city-vaca">City Trip</label>
-            <label for="cruise-vaca"><input type="checkbox" value="vacation-type" id="cruise-vaca">Cruise</label>
-            <label for="cult-vaca"><input type="checkbox" value="vacation-type" id="cult-vaca">Cultural Vacation</label>
-            <label for="fam-vaca"><input type="checkbox" value="vacation-type" id="fam-vaca">Family Vacation</label>
-            <label for="group-vaca"><input type="checkbox" value="vacation-type" id="group-vaca">Group Vacation</label>
-            <label for="resort-vaca"><input type="checkbox" value="vacation-type" id="resort-vaca">Resort</label>
-            <label for="solo-vaca"><input type="checkbox" value="vacation-type" id="solo-vaca">Solo Vacation</label>
-            <label for="staycation-vaca"><input type="checkbox" value="vacation-type" id="staycation-vaca">Staycation</label>
+            <label for="a-f-vaca"><input type="checkbox" value="af" id="a-f-vaca">Activity-Focused Vacation</label>
+            <label for="budget-vaca"><input type="checkbox" value="budget" id="budget-vaca">Budget Vacation</label>
+            <label for="camping-vaca"><input type="checkbox" value="camping" id="camping-vaca">Camping Vacation</label>
+            <label for="city-vaca"><input type="checkbox" value="city" id="city-vaca">City Trip</label>
+            <label for="cruise-vaca"><input type="checkbox" value="cruise" id="cruise-vaca">Cruise</label>
+            <label for="cult-vaca"><input type="checkbox" value="cult" id="cult-vaca">Cultural Vacation</label>
+            <label for="fam-vaca"><input type="checkbox" value="family" id="fam-vaca">Family Vacation</label>
+            <label for="group-vaca"><input type="checkbox" value="group" id="group-vaca">Group Vacation</label>
+            <label for="resort-vaca"><input type="checkbox" value="resort" id="resort-vaca">Resort</label>
+            <label for="solo-vaca"><input type="checkbox" value="solo" id="solo-vaca">Solo Vacation</label>
+            <label for="staycation-vaca"><input type="checkbox" value="staycation" id="staycation-vaca">Staycation</label>
         </fieldset>
 
 <!-- Fifth part of form. -->
         <fieldset>
-            <legend>Any comments, questions or suggestions?</legend>
-            <label for="com-quest-sugg-text">
-                <input type="textarea" name="com-quest-sugg" id="comment-quest-sugg-text" cols="40" rows="5">
-            </label>
+            <label for="com-quest-sugg-text">Any comments, questions or suggestions?</label>
+            <textarea name="textarea" id="com-quest-sugg" cols="40" rows="5"></textarea>
         </fieldset>
 <!-- This label is for the terms and conditions and submit input. It is not linked to any reference. -->
-        <label class="inline-tc" for="t-c">I accept the <a href="">terms and conditions</a>.
+        <label class="inline-tc" for="t-c">
             <input id="t-c" name="t-c" type="checkbox" required />
+            I accept the <a href="#">terms and conditions</a>.
         </label>
-        <input type="submit" name="submit" value="Submit"/>
+
+        <input id="submit" type="submit" name="submit" value="Submit"/>
     </form>
 
 <!-- Personal footer. -->
