@@ -56,18 +56,13 @@ header h1 {
 
 ul {
     list-style-position: inside;
-    /* Moves the bullet point inside the content box */
     padding-left: 0;
-    /* Optional: Adjust the left padding if needed */
     margin-left: 0;
-    /* Optional: Adjust the margin if needed */
 }
 
 li {
     line-height: 1.5;
-    /* Adjust spacing between lines for vertical alignment */
     margin-bottom: 10px;
-    /* Add spacing between list items */
 }
 
 footer {
