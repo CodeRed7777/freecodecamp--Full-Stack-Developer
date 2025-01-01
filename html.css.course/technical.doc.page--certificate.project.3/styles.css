@@ -1,0 +1,118 @@
+#navbar {
+    position: fixed;
+}
+
+/*@media screen and (max-width: 750px) {
+        etc 
+}*/
+
+/* General section styling */
+.section-header {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.section-content {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+
+/* Styling for maintenance topics */
+.maintenance-topic {
+    margin-bottom: 20px;
+}
+
+.maintenance-topic h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.maintenance-topic p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Styling for guitar types */
+.guitar-type {
+    margin-bottom: 20px;
+}
+
+.guitar-type h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.guitar-type p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.guitar-type ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.guitar-type li {
+    margin-bottom: 8px;
+}
+
+
+/* Styling for tuning topics */
+.tuning-topic {
+    margin-bottom: 20px;
+}
+
+.tuning-topic h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.tuning-topic p,
+.tuning-topic ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.tuning-topic ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.tuning-topic li {
+    margin-bottom: 8px;
+}
+
+
+/* Styling for theory topics */
+.theory-topic {
+    margin-bottom: 20px;
+}
+
+.theory-topic h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.theory-topic p,
+.theory-topic ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.theory-topic ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.theory-topic li {
+    margin-bottom: 8px;
+}
