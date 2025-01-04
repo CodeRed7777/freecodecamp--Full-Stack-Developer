@@ -3,136 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Tribute Page</title>
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main id="main">
-        <header class="header">
-            <h1 id="title">Steven Siro Vai</h1>
-            <p id="description">American guitarist, songwriter, and producer. A three-time Grammy 
-            Award winner and fifteen-time nominee.</p>
-        </header>
-        <figure id="img-div">
-            <img id="image" src="data:image/jpeg;base64,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" alt="Steve Vai performing">
-            <figcaption id="img-caption">Steve, inventor of the Hydra: a three-neck guitar, created a 36 string beast of a guitar with a 
-                steam-punk attitude and endless possibilities. Steve shows just what the instrument is capable of on his newly 
-                released album, Inviolate.</figcaption>    
-        </figure>
-        <section id="tribute-info">
-            <p>Vai's playing style utilizes specialized guitar techniques (such as two-handed tapping, alternate picking, legato,
-            hybrid picking, sweep picking, whammy bar acrobatics, and circular vibrato) in his music, as well as a wide range of
-            recording techniques.</p>
-            <h3>Steve Vai's Discography Timeline</h3>
-            <ul>
-                <li>Flex-Able (1984)</li>
-                <li>Passion and Warfare (1990)</li>
-                <li>Sex & Religion (1993)</li>
-                <li>Alien Love Secrets (1995)</li>
-                <li>Fire Garden (1996)</li>
-                <li>Flex-Able Leftovers (1998)</li>
-                <li>The Ultra Zone (1999)</li>
-                <li>Real Illusions: Reflections (2005)</li>
-                <li>The Story of Light (2012)</li>
-                <li>Modern Primitive (2016)</li>
-                <li>Inviolate (2022)</li>
-                <li>Vai/Gash (2023)</li>
-            </ul>
-            <h3>Learn more about <a id="tribute-link" href="https://www.vai.com/" target="_blank">Steve Vaiography</a>! One of the best to ever do 
-                it!</h3>
+    <nav id="navbar">
+        <header>Guitar: For Beginners</header>
+        <ul>
+            <li><a class="nav-link" href="#anatomy_of_a_guitar">The Anatomy of a Guitar</a></li>
+            <li><a class="nav-link" href="#acoustic_vs_electric_guitars">Acoustic vs. Electric Guitars</a></li>
+            <li><a class="nav-link" href="#basic_guitar_maintenance">Basic Guitar Maintenance</a></li>
+            <li><a class="nav-link" href="#understanding_guitar_tuning">Understanding Guitar Tuning</a></li>
+            <li><a class="nav-link" href="#introduction_to_music_theory_for_guitarists">Introduction to Music Theory for Guitarists</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="anatomy_of_a_guitar">
+            <header class="section-header">
+                <h2>Anatomy of a Guitar</h2>
+            </header>
+            <article class="section-content">
+                <div class="guitar-part" id="body">
+                    <h3>Body</h3>
+                    <p>The body is the largest part of the guitar and plays a significant role in producing sound. Acoustic guitars
+                        have a hollow body with a soundhole, while electric guitars have a solid body that relies on pickups and
+                        amplifiers for sound.</p>
+                </div>
+                <div class="guitar-part" id="neck">
+                    <h3>Neck</h3>
+                    <p>The neck is the long, narrow part of the guitar that connects the body to the headstock. It houses the
+                        fretboard, frets, and truss rod for adjustments.</p>
+                </div>
+                <div class="guitar-part" id="fretboard">
+                    <h3>Fretboard</h3>
+                    <p>The fretboard, or fingerboard, is the flat surface on the neck where you press the strings to change pitch.
+                        It contains <code>frets</code>, which divide notes into semitones.</p>
+                </div>
+                <div class="guitar-part" id="headstock">
+                    <h3>Headstock</h3>
+                    <p>The headstock is located at the end of the neck and contains the tuning pegs for adjusting string tension and
+                        tuning.</p>
+                </div>
+                <div class="guitar-part" id="strings">
+                    <h3>Strings</h3>
+                    <p>Guitars typically have six strings, tuned from lowest to highest as E, A, D, G, B, and e. They are made from
+                        materials like nylon or steel.</p>
+                </div>
+                <div class="guitar-part" id="bridge">
+                    <h3>Bridge</h3>
+                    <p>The bridge anchors the strings to the body. On acoustic guitars, it transfers string vibration to the
+                        soundboard. Electric guitars use the bridge to stabilize string tension, sometimes incorporating a tremolo
+                        system.</p>
+                </div>
+                <div class="guitar-part" id="pickups">
+                    <h3>Pickups (Electric Guitars Only)</h3>
+                    <p>Pickups are magnetic components that convert string vibrations into electrical signals for amplification.
+                        Single-coil pickups offer a bright sound, while humbuckers provide a warmer, fuller tone.</p>
+                </div>
+                <div class="guitar-part" id="controls">
+                    <h3>Controls (Electric Guitars Only)</h3>
+                    <p>Electric guitars often have controls for volume, tone, and pickup selection.</p>
+                </div>
+            </article>
+            </section>
+        </section>
+        <section class="main-section" id="acoustic_vs_electric_guitars">
+            <header class="section-header">
+                <h2>Acoustic vs Electric Guitars</h2>
+            </header>
+            <article class="section-content">
+                <div class="guitar-type" id="acoustic">
+                    <h3>Acoustic Guitars</h3>
+                    <p>Acoustic guitars are designed to amplify sound naturally without electronics. They feature a hollow body with
+                        a soundhole that resonates vibrations. Commonly used in genres like folk and classical, acoustic guitars are
+                        ideal for unplugged performances and do not require additional equipment like amplifiers.</p>
+                </div>
+                <div class="guitar-type" id="electric">
+                    <h3>Electric Guitars</h3>
+                    <p>Electric guitars rely on pickups and amplifiers to produce sound. Their solid body minimizes natural
+                        resonance, making them ideal for genres like rock, blues, and metal. They are highly versatile with
+                        adjustable tones through pickups and effects.</p>
+                </div>
+                <div class="guitar-type" id="differences">
+                    <h3>Key Differences</h3>
+                    <ul>
+                        <li><strong>Sound Production:</strong> Acoustic guitars rely on their hollow body, while electric guitars
+                            use pickups and amplifiers.</li>
+                        <li><strong>Portability:</strong> Acoustic guitars are standalone, while electric guitars require additional
+                            gear.</li>
+                        <li><strong>Playability:</strong> Electric guitars often have lighter strings and lower action, making them
+                            easier to play.</li>
+                        <li><strong>Tone:</strong> Acoustic guitars have a warm, organic sound, while electric guitars offer a
+                            broader tonal range.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="basic_guitar_maintenance">
+            <header class="section-header">
+                <h2>Basic Guitar Maintenance</h2>
+            </header>
+            <article class="section-content">
+                <div class="maintenance-topic" id="string-care">
+                    <h3>String Care</h3>
+                    <p>Clean your strings after every session with a dry cloth to prevent dirt buildup. Replace strings regularly:
+                        every 1–2 months for frequent players and every 3–6 months for occasional players.</p>
+                </div>
+                <div class="maintenance-topic" id="tuning">
+                    <h3>Tuning</h3>
+                    <p>Always tune your guitar before playing. Use a digital tuner or a tuning app for accurate tuning.</p>
+                </div>
+                <div class="maintenance-topic" id="fretboard-cleaning">
+                    <h3>Fretboard Cleaning</h3>
+                    <p>Wipe the fretboard with a soft, slightly damp cloth. For deeper cleaning, use specialized fretboard oil
+                        sparingly.</p>
+                </div>
+                <div class="maintenance-topic" id="body-cleaning">
+                    <h3>Body Cleaning</h3>
+                    <p>Use a microfiber cloth to wipe down the body. Avoid harsh cleaners and use guitar-safe cleaning products.</p>
+                </div>
+                <div class="maintenance-topic" id="storage">
+                    <h3>Storage</h3>
+                    <p>Store your guitar in a case when not in use to protect it from dust and temperature changes. Avoid exposing
+                        it to extreme heat or humidity.</p>
+                </div>
+                <div class="maintenance-topic" id="periodic-checkups">
+                    <h3>Periodic Checkups</h3>
+                    <p>Check for loose tuning pegs or screws. Visit a technician annually for a full setup, including intonation,
+                        action, and truss rod adjustments.</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="understanding_guitar_tuning">
+            <header class="section-header">
+                <h2>Understanding Guitar Tuning</h2>
+            </header>
+            <article class="section-content">
+                <div class="tuning-topic" id="standard-tuning">
+                    <h3>Standard Tuning</h3>
+                    <p>The most common tuning for guitars is <code>E, A, D, G, B, e</code> (from lowest to highest pitch). It is used in most
+                        genres, making it essential for beginners.</p>
+                </div>
+                <div class="tuning-topic" id="alternate-tunings">
+                    <h3>Alternate Tunings</h3>
+                    <ul>
+                        <li><strong>Drop D:</strong> Lowers the 6th string from E to D (D, A, D, G, B, e). Common in rock and metal.
+                        </li>
+                        <li><strong>Open G:</strong> Strings are tuned to a G major chord (D, G, D, G, B, D). Popular in blues and
+                            slide guitar.</li>
+                        <li><strong>DADGAD:</strong> Often used in folk and Celtic music (D, A, D, G, A, D).</li>
+                    </ul>
+                </div>
+                <div class="tuning-topic" id="tuning-tools">
+                    <h3>Tools for Tuning</h3>
+                    <p>Various tools help ensure accurate tuning:</p>
+                    <ul>
+                        <li><strong>Clip-On Tuners:</strong> Attach to the headstock and use vibration to detect pitch.</li>
+                        <li><strong>Digital Tuners:</strong> Handheld or pedal-based for precise tuning.</li>
+                        <li><strong>Tuning Apps:</strong> Smartphone apps like GuitarTuna are convenient for beginners.</li>
+                        <li><strong>By Ear:</strong> Advanced players tune relative to reference pitches like a tuning fork or
+                            piano.</li>
+                    </ul>
+                </div>
+                <div class="tuning-topic" id="best-practices">
+                    <h3>Best Practices</h3>
+                    <p>Always tune before playing to ensure good sound quality. Tune in a quiet environment to avoid interference.
+                        Stretch new strings gently to help them stay in tune.</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="introduction_to_music_theory_for_guitarists">
+            <header class="section-header">
+                <h2>Introduction to Music Theory for Guitarists</h2>
+            </header>
+            <article class="section-content">
+                <div class="theory-topic" id="musical-alphabet">
+                    <h3>The Musical Alphabet</h3>
+                    <p>The musical alphabet consists of A, B, C, D, E, F, and G, along with sharps (#) and flats (b). These notes
+                        repeat across the fretboard and are fundamental to understanding music theory.</p>
+                </div>
+                <div class="theory-topic" id="frets-notes">
+                    <h3>Frets and Notes</h3>
+                    <p>Each fret on the guitar corresponds to a half-step increase in pitch. In standard tuning, the open strings
+                        are E, A, D, G, B, and e.</p>
+                </div>
+                <div class="theory-topic" id="scales">
+                    <h3>Scales</h3>
+                    <p>Scales are patterns of notes that form the basis of music:</p>
+                    <ul>
+                        <li><strong>Major Scale:</strong> A foundational scale with a happy sound (e.g., C Major: C, D, E, F, G, A,
+                            B).</li>
+                        <li><strong>Minor Scale:</strong> A scale with a sadder tone (e.g., A Minor: A, B, C, D, E, F, G).</li>
+                    </ul>
+                </div>
+                <div class="theory-topic" id="chords">
+                    <h3>Chords</h3>
+                    <p>Chords are built by combining notes from scales:</p>
+                    <ul>
+                        <li><strong>Major Chords:</strong> Bright and happy (e.g., C Major: C, E, G).</li>
+                        <li><strong>Minor Chords:</strong> Sad and moody (e.g., A Minor: A, C, E).</li>
+                    </ul>
+                </div>
+                <div class="theory-topic" id="basic-theory-concepts">
+                    <h3>Basic Theory Concepts</h3>
+                    <p>Understanding intervals and key signatures helps guitarists navigate music:</p>
+                    <ul>
+                        <li><strong>Intervals:</strong> The distance between two notes (e.g., a Perfect Fifth spans 7 half-steps).
+                        </li>
+                        <li><strong>Key Signatures:</strong> Indicate the scale or key of a song (e.g., C Major has no sharps or
+                            flats).</li>
+                    </ul>
+                </div>
+            </article>
         </section>
     </main>
 </body>
-<footer>
-    <address class="p-info">
-        <ins>Contact information</ins><br>
-        email: muse3710@gmail.com<br>
-        github: CodeRed7777 - <a href="https://github.com/CodeRed7777">profile</a><br>
-        linkedin:<a href="https://www.linkedin.com/in/carlos-amaya-2455a8221/">Carlos Amaya's profile</a><br>
-        x: <a href="https://twitter.com/Red7777Code">@Red7777Code</a><br>
-        discord: code.red777 #7529<br>
-    </address>
-    <br>Info from Wikipedia.com and vai.com - <a href="https://www.freecodecamp.org"> Freecodecamp.com!</a>
-</footer>
 </html>
