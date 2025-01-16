@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    background-image: url("../img/tourism.background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+#title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#description {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+form {
+    background-color: #313030ae;
+    color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: calc(100% - 12px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: left;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #32313179;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ff0000;
+}
+
+footer a:hover {
+    color: #833d3d;
+}
+
+.inline-tc {
+    display: inline-block;
+}
+
+.inline-tc input[type="checkbox"] {
+    margin-right: 5px; /* Adjust as needed */
+    vertical-align: middle; /* Align the checkbox vertically with the text */
+}

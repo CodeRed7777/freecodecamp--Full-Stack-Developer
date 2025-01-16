@@ -8,7 +8,7 @@ body{
     font-size: 16px;
 }
 
-/* CSS for heading 1 anf first paragraph */
+/* CSS for heading 1 and first paragraph */
 h1{
     padding: 10px;
     text-decoration: underline;
@@ -38,30 +38,45 @@ form {
     padding-bottom: 3em;
 }
 
+/* CSS section for fieldset elements. */
 fieldset {
     border: none;
     border-bottom: 3px solid rgb(70, 67, 67);
-    padding: 2rem 0;
-
 }
+
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+.cust-account{
+    padding-bottom: 1.5em;
+}
+
+/* This is for fieldset 2. */
+fieldset.inline-labels {
+    display: flex;
+    justify-content: space-around;
+}
+
+fieldset.inline-labels label {
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0 0.5em 0.5em;
+    padding: 1.5em;
+}
+
+/* ------------------------------------------------ */
 
 legend {
     width: 100%;
-    padding-top: 10px;
+    padding: .5em;
     text-align: center;
+    font-size: large;
 }
 
 label {
     display: block;
-    margin: 0.5rem 0;
-}
-
-label:last-of-type{
-    padding-top: 1em;
-}
-
-input:last-of-type{
-    margin-top: 0.5em;
+    margin: 1rem 0;
 }
 
 input, textarea{
@@ -82,10 +97,41 @@ input, textarea, select{
     vertical-align: middle;
 }
 
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #686869;
+    border-color: white;
+    min-width: 300px;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+/* Adjust the label for the terms and conditions */
+.inline-tc {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    margin: 20px;
+    /* Added white-space: nowrap; to prevent text wrapping */
+}
+
+.inline-tc input[type="checkbox"] {
+    order: -1;
+    margin: 0 10px 0 0;
+    padding: 5px;
+}
+
 /* CSS for terms and conditions link. */
 a{
     font-style: italic;
     text-decoration: underline;
+    padding-left: 5px;
 }
 
 a:link{
@@ -102,4 +148,9 @@ a:hover{
 
 a:active{
     color: aqua;
+}
+
+footer {
+    font-size: 14px;
+    margin: 25px;
 }
