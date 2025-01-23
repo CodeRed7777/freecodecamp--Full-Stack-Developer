@@ -22,6 +22,15 @@ body {
     z-index: 1000;
 }
 
+.logo{
+    display: flex;
+}
+
+#header-img{
+    width: 50px;
+    margin-right: 10px;
+}
+
 #nav-bar {
     display: flex;
     justify-content: space-between;
@@ -58,7 +67,7 @@ body {
     /* Offsets for fixed navbar */
     text-align: center;
     padding: 50px 20px;
-    background-color: #ff6347;
+    background-color: red;
     /* Tomato color */
     color: white;
 }
@@ -77,21 +86,25 @@ body {
     padding: 10px 20px;
     font-size: 1rem;
     background-color: white;
-    color: #ff6347;
+    color: black
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin-top: 25px;
 }
 
 #shop-now:hover {
     background-color: #333;
     color: white;
+
 }
 
 /* Main Sections */
 .main-section {
     padding: 50px 20px;
+    width: 750px;
+    min-width: 500px;
     max-width: 1100px;
     margin: 0 auto;
     background: white;
@@ -147,4 +160,14 @@ body {
 
 #footer ul li a:hover {
     color: #ff6347;
+}
+
+@media only screen and (max-width: 720px) {
+    #header {
+        grid-template-columns: 1fr;
+    }
+}
+
+.p-info a{
+    color: rgb(0, 255, 34);
 }
