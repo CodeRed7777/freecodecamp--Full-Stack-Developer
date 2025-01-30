@@ -1,0 +1,199 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    /* Enables layout with a fixed nav and content area */
+}
+
+/* Navigation bar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #333;
+    /* Dark background for contrast */
+    color: white;
+    overflow-y: auto;
+    /* Adds scrolling if navbar content overflows */
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Ensures the navbar stays above other elements */
+}
+
+#navbar header {
+    font-size:1.5em;
+}
+
+#navbar ul {
+    list-style: none;
+    /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+#navbar ul li {
+    margin: 10px 0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#navbar ul li a:hover {
+    background-color: #575757;
+    /* Highlight on hover */
+}
+
+/* Main content area */
+#main-doc {
+    margin-left: 280px;
+    /* Creates space for the fixed navbar */
+    padding: 20px;
+    width: calc(100% - 260px);
+    /* Adjusts width dynamically */
+    background-color: #eaeaea;
+    /* Off-white background */
+    color: #333;
+    /* Text color for readability */
+    height: 100vh;
+    /* Full viewport height */
+    overflow-y: auto;
+    /* Enables scrolling if content overflows */
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+    /* Adds a subtle inner shadow */
+}
+
+/* General section styling */
+.section-header {
+        font-size: 2rem;
+        color: #333;
+        border-bottom: 2px solid #ddd;
+        scroll-margin-top: 80px;
+        /* Adjust this value to match your navbar height */
+}
+
+/* Content styling */
+.section-content {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Styling for maintenance topics */
+.maintenance-topic {
+    margin-bottom: 20px;
+}
+
+.maintenance-topic h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.maintenance-topic p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Styling for guitar types */
+.guitar-type {
+    margin-bottom: 20px;
+}
+
+.guitar-type h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.guitar-type p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.guitar-type ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.guitar-type li {
+    margin-bottom: 8px;
+}
+
+
+/* Styling for tuning topics */
+.tuning-topic {
+    margin-bottom: 20px;
+}
+
+.tuning-topic h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.tuning-topic p,
+.tuning-topic ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.tuning-topic ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.tuning-topic li {
+    margin-bottom: 8px;
+}
+
+
+/* Styling for theory topics */
+.theory-topic {
+    margin-bottom: 20px;
+}
+
+.theory-topic h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.theory-topic p,
+.theory-topic ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.theory-topic ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.theory-topic li {
+    margin-bottom: 8px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #navbar {
+        width: 200px;
+    }
+
+#main-doc {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    }
+}
